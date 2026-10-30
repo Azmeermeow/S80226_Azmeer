@@ -1,0 +1,73 @@
+<! DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Course Feedback</title>
+    </head>
+
+    <!--
+  Identified Errors and Line Numbers:
+  1. Line 10: Incorrect closing tag </head> used instead of </header>.
+  2. Line 20: Used <td>Rating</td> inside a header row (<tr>) containing <th> elements; changed to <th>Rating</th>.
+  3. Line 29: colspan="3" used, but the table only has 3 columns total; changed to colspan="2".
+  4. Line 33: Missing closing </td> tag for "Semantic HTML".
+  5. Line 41: Input id="fullname" did not match the label's for="name" attribute (aligned to id="name").
+  6. Lines 43 & 45: Radio buttons had mismatched name attributes ("good" and "poor") instead of sharing a single group name ("rating").
+  7. Line 48: Label for="labs" did not match checkbox id="lab" (aligned to for="lab").
+  8. Line 50: Typo in closing tag </from> instead of </form>.
+  9. Line 53: Missing semicolon in entity &copy (changed to &copy;).
+-->
+
+    <body>
+        <header>
+            <h1>CSF3133 Course Feedback</h1>
+            </head>
+            <nav>
+                <a href="#results">Results</a> | <a href="#form">Feedback Form</a>
+            </nav>
+            <section id="results">
+                <h2>Feedback Summary</h2>
+                <table border="1">
+                    <tr>
+                        <th>Week</th>
+                        <th>Topic</th>
+                        <td>Rating</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Introduction to HTML</td>
+                        <td>4.5</td>
+                    </tr>
+
+                    <td>2</td>
+                    <td colspan="3">Tables and Forms</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Semantic HTML
+                        <td>4.0</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="form">
+                <h2>Give Your Feedback</h2>
+                <form action="submit_feedback.php" method="post">
+                    <label for="name">Name :</label>
+                    <input type="text" id="fullname" name="name"><br>
+                    <label>Overall rating :</label><br>
+                    <input type="radio" id="good" name="good" value="good">
+                    <label for="good">Good</label>
+                    <input type="radio" id="poor" name="poor" value="poor">
+                    <label for="poor">Poor</label><br>
+                    <input type="checkbox" id="lab" name="lab" value="yes">
+                    <label for="labs">I attended all labs</label><br>
+                    <input type="submit" value="Submit">
+                    </from>
+            </section>
+            <footer>
+                <p>Copyright &copy 2026 CSF3133</p>
+            </footer>
+    </body>
+
+    </html>
