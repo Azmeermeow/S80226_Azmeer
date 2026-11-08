@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azmeer Bakery</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <h1>Azmeer Bakery&reg; <span>Try first and come again!!</span></h1>
+    </div>
+
+    <!-- Navigation Section -->
+    <div id="nav">
+        <a href="#intro">Our Shop</a> |
+        <a href="#form">Order Form</a> |
+        <a href="#sidebar">Price List</a>
+    </div>
+
+    <!-- Content & Introduction Section -->
+    <div id="intro">
+        <h2>Welcome to Our Bakery</h2>
+        <p>Welcome to <strong>Azmeer Bakery</strong>! We offer <em>delicious</em>
+            and fresh treats every single day. Feel free to explore our
+            <a href="#sidebar">menu</a> and place an order.
+        </p>
+
+        <ul>
+            <li>Freshly baked daily</li>
+            <li>Organic ingredients</li>
+        </ul>
+
+        <!-- Order Form Section -->
+        <div id="form">
+            <h3>Order Form</h3>
+            <form oninput="total.value = ((Number(cupcakes.value) * 3) + (Number(slices.value) * 5)).toFixed(2)">
+                <p>
+                    <label>Customer Name: <input type="text" placeholder="Enter your name" required autofocus></label>
+                </p>
+
+                <p>
+                    <label>Phone Number: <input type="tel" required></label>
+                </p>
+                <p>
+                    <label>Email: <input type="email" required></label>
+                </p>
+                <p>
+                    <label>Pick up date: <input type="date"></label>
+                </p>
+                <p>
+                    <label>Pick up time: <input type="time"></label>
+                </p>
+                <p>
+                    <label>Choose Your Flavour: <input type="text" list="flavour"></label>
+
+                    <datalist id="flavour">
+                        <option value="Chocolate"></option>
+                        <option value="Matcha"></option>
+                        <option value="Strawberry"></option>
+                        <option value="Cheese"></option>
+                    </datalist>
+                </p>
+                <p>
+                    <label>Icing colour: <input type="color"></label>
+                </p>
+                <p>
+                    <label>Sweetness level: <input type="range" min="1" max="5" step="1"></label>
+                </p>
+                
+                <!-- Price Calculator Section -->
+                <h3>Price Calculator</h3>
+                <p>
+                    <label>Cupcakes (RM 3.00 each): <input type="number" id="cupcakes" min="0" value="0"></label>
+                </p>
+                <p>
+                    <label>Cake Slices (RM 5.00 each): <input type="number" id="slices" min="0" value="0"></label>
+                </p>
+                <p>
+                    Total Price: RM <output name="total" for="cupcakes slices">0.00</output>
+                </p>
+
+                <p>
+                    <button type="submit">Submit Order</button>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div id="sidebar">
+        <h3>Price List</h3>
+        <ul>
+            <li>Cupcake &reg; - RM 3.00</li>
+            <li>Cake Slices - RM 5.00</li>
+            <li>Bulk Orders &gt;10 pieces get a free drink</li>
+        </ul>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <p>Copyright &copy; 2026 Azmeer Bakery &nbsp;|&nbsp; Currency accepted: &euro;, &pound;</p>
+    </div>
+
+</body>
+
+</html>
