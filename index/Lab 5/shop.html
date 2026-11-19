@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Campus Bookstore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <!-- 
+      Error List:
+      1. shop.css, Line 2: Typo in font-family ('Robotto' instead of 'Roboto').
+      2. shop.html, Line 7: Typo in stylesheet rel attribute ("stylesheets" instead of "stylesheet").
+      3. shop.html, Line 20 / shop.css, Line 26: ID mismatch ('product' vs '#products').
+      4. shop.css, Line 5: Typo in property name ('bacground-position' instead of 'background-position').
+      5. shop.css, Line 12-13: Background color `#333` placed outside the `ul` block.
+      6. shop.css, Line 17: `display: inline;` used on navigation links instead of `display: block;` or `inline-block;`.
+      7. shop.css, Line 23: Invalid hover selector syntax (`li:a:hover` instead of `li a:hover`).
+      8. shop.css, Line 37: Invalid pseudo-class (`tr:hovered` instead of `tr:hover`).
+      9. shop.html, Line 18: Inline style color overrides clean CSS structure.
+      10. shop.html, Line 21-25: Table rows/cells formatting or missing structural tags fixed for clean validation.
+    -->
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <h1>Campus Bookstore</h1>
+    <p>Textbooks, stationery and more for every student.</p>
+    <table id="products">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Category</th>
+                <th>Price (RM)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Web Design Basics</td>
+                <td>Textbook</td>
+                <td>45.00</td>
+            </tr>
+            <tr>
+                <td>A4 Notebook</td>
+                <td>Stationery</td>
+                <td>6.50</td>
+            </tr>
+            <tr>
+                <td>USB Drive 32GB</td>
+                <td>Gadget</td>
+                <td>25.00</td>
+            </tr>
+            <tr>
+                <td>Highlighter Set</td>
+                <td>Stationery</td>
+                <td>9.90</td>
+            </tr>
+        </tbody>
+    </table>
+    <footer>&copy; 2026 Campus Bookstore</footer>
+</body>
+</html>

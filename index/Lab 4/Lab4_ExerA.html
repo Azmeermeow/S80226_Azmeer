@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Terengganu</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        body {
+            background-color: #f2f8fc;
+        }
+
+        #welcome {
+            border-left: 5px solid #f2a900;
+            padding-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="top">
+        <h1>Visit Terengganu</h1>
+        <p>Discover the beauty, culture and nature of the East Coast.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#welcome">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#trip">Plan Your Trip</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="welcome" class="center">
+            <h2>Welcome to Terengganu</h2>
+
+            <p>
+                Explore beautiful islands, peaceful lakes and colourful local markets.
+                Terengganu is a wonderful destination for students, families and visitors.
+            </p>
+
+            <p>Start your journey and create unforgettable memories!</p>
+        </section>
+
+        <section id="destinations">
+            <h2 class="center">Popular Destinations</h2>
+
+            <div class="destination-list">
+
+                <article class="card">
+                    <h3>Pulau Redang</h3>
+
+                    <p>
+                        Enjoy clear blue water, white sandy beaches and colourful marine life.
+                        It is a great place for swimming and snorkelling.
+                    </p>
+
+                    <p class="price">
+                        <span class="old-price">RM 299</span>
+                        <span class="new-price">RM 199</span>
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Tasik Kenyir</h3>
+
+                    <p>
+                        Relax at one of Malaysia's largest man-made lakes.
+                        Visitors can enjoy boat trips, waterfalls and beautiful green scenery.
+                    </p>
+
+                    <p class="price">
+                        <span class="old-price">RM 250</span>
+                        <span class="new-price">RM 180</span>
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Pasar Payang</h3>
+
+                    <p>
+                        Visit this famous market to shop for traditional batik, local food
+                        and souvenirs while experiencing Terengganu's culture.
+                    </p>
+
+                    <p class="price">
+                        <span class="old-price">RM 120</span>
+                        <span class="new-price">RM 85</span>
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="seat-status">
+                <p><strong>Trip seats filled:</strong></p>
+
+                <meter min="0" max="40" value="28">
+                    28 out of 40
+                </meter>
+
+                <span>28 of 40 seats booked</span>
+            </div>
+        </section>
+
+        <section id="video" class="center">
+            <h2>Explore Terengganu</h2>
+
+            <figure>
+                <video controls width="640" height="360">
+                    <source src="terengganu.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+
+                <figcaption class="caption">
+                    Best place to visit in Terengganu.
+                </figcaption>
+            </figure>
+        </section>
+
+        <section id="trip">
+            <h2 class="center">Plan Your Trip</h2>
+
+            <p class="center">
+                Complete the form below to register your interest.
+            </p>
+
+            <form class="trip-form" action="#" method="get">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="example@email.com" required>
+
+                <p><strong>Traveller type:</strong></p>
+
+                <label>
+                    <input type="radio" name="traveller"
+                           value="student" required>
+                    Student
+                </label>
+
+                <label>
+                    <input type="radio" name="traveller"
+                           value="staff">
+                    Staff
+                </label>
+
+                <label>
+                    <input type="radio" name="traveller"
+                           value="public">
+                    Public
+                </label>
+
+                <p><strong>Interests:</strong></p>
+
+                <label>
+                    <input type="checkbox" name="interest" value="islands">
+                    Islands
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interest" value="food">
+                    Food
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interest" value="culture">
+                    Culture
+                </label>
+
+                <label>
+                    <input type="checkbox" name="interest" value="nature">
+                    Nature
+                </label>
+
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Visit Terengganu Tourism Promotion Page</p>
+
+        <address>
+            Contact us:
+            <a href="mailto:visit.terengganu@example.com">
+                visit.terengganu@example.com
+            </a>
+        </address>
+
+        <p><a href="#top">Back to top</a></p>
+    </footer>
+
+</body>
+</html>
